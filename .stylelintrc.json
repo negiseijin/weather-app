@@ -5,8 +5,15 @@
     "stylelint-config-recess-order",
     "stylelint-config-prettier"
   ],
+  "ignoreFiles": ["**/node_modules/**"],
   "plugins": ["stylelint-scss"],
   "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["extends", "tailwind"]
+      }
+    ],
     "block-no-empty": null,
     "scss/at-rule-no-unknown": true,
     "unit-allowed-list": ["px", "em", "deg"],

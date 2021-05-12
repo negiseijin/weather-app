@@ -1,6 +1,7 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
-import Layout from '@/components/Layout'
-import ListDetail from '@/components/ListDetail'
+
+import ListDetail from '@/components/molecules/ListDetail'
+import Layout from '@/components/templates/Layout'
 import { User } from '@/interfaces/index'
 import { sampleUserData } from '@/utils/sample-data'
 
@@ -14,7 +15,7 @@ const StaticPropsDetail: NextPage<Props> = ({ item, errors }) => {
     return (
       <Layout title="Error | Next.js + TypeScript Example">
         <p>
-          <span style={{ color: 'red' }}>Error:</span> {errors}
+          <span className="text-red-500">Error:</span> {errors}
         </p>
       </Layout>
     )

@@ -1,6 +1,6 @@
-import * as React from 'react'
+import React from 'react'
 
-import ListItem from '@/components/ListItem'
+import ListItem from '@/components/atoms/ListItem'
 import { User } from '@/interfaces/index'
 
 type Props = {
