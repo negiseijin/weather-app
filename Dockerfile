@@ -5,7 +5,8 @@ WORKDIR /app
 ARG NODE_ENV=production
 ENV PATH=/app/node_modules/.bin:$PATH \
     NODE_ENV="$NODE_ENV"
-RUN apk --no-cache add curl
+RUN apk --no-cache add curl && \
+    apk add git
 COPY package.json yarn.lock /app/
 EXPOSE 3000
 
