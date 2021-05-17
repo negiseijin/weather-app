@@ -11,8 +11,8 @@ type Props = {
 
 const Search: React.VFC<Props> = React.memo(
   ({ value, disabled, clickHandler }) => (
-    <div className="flex-none sm:flex w-full justify-start lg:justify-center items-center">
-      <div className="relative mr-4 w-full mb-4 sm:mb-0">
+    <div className="items-center justify-start flex-none w-full sm:flex lg:justify-center">
+      <div className="relative w-full mb-4 mr-4 sm:mb-0">
         <Input value={value} disabled={disabled} />
       </div>
       <Button disabled={disabled} clickHandler={clickHandler} />

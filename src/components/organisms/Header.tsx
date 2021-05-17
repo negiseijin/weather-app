@@ -3,8 +3,8 @@ import React from 'react'
 
 const Header: React.VFC = React.memo(() => (
   <header className="text-gray-600 body-font">
-    <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a className="flex text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl items-center text-gray-900 mb-4 md:mb-0">
+    <div className="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
+      <a className="flex items-center mb-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl md:mb-0">
         <svg
           className="w-6 h-6"
           fill="none"
@@ -21,7 +21,7 @@ const Header: React.VFC = React.memo(() => (
         </svg>
         <span className="ml-3 text-xl">weater</span>
       </a>
-      <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto">
         <Link href="/">
           <a className="mr-5 hover:text-gray-900">Home</a>
         </Link>
