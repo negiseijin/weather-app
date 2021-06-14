@@ -1,5 +1,6 @@
-.git
-.next
+Dockerfile
 .dockerignore
 node_modules
-Dockerfile
+npm-debug.log
+README.md
+.next
