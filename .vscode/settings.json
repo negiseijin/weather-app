@@ -8,5 +8,5 @@
   "stylelint.enable": true,
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false
+  "tailwindCSS.validate": true
 }

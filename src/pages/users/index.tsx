@@ -1,7 +1,7 @@
 import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
-import Layout from '@/components/Layout'
-import List from '@/components/List'
+import List from '@/components/molecules/List'
+import Layout from '@/components/templates/Layout'
 import { User } from '@/interfaces/index'
 import { sampleUserData } from '@/utils/sample-data'
 
